@@ -7,12 +7,12 @@ This is an open agent skill for AI coding assistants (like Cursor, Claude Code, 
 You can install this skill globally into your preferred AI agent using the [npx skills](https://github.com/vercel-labs/skills) CLI:
 
 ```bash
-npx skills add https://github.com/RollingGo-AI/rollinggo-hotel-skill
+npx skills add https://github.com/RollingGo-AI/hotel-skill
 ```
 
 If you have multiple agents installed, you can target a specific one (e.g. Cursor):
 ```bash
-npx skills add https://github.com/RollingGo-AI/rollinggo-hotel-skill --agent cursor
+npx skills add https://github.com/RollingGo-AI/hotel-skill --agent cursor
 ```
 
 ## What it does
