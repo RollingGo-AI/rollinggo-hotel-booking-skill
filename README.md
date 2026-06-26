@@ -1,4 +1,4 @@
-# RollingGo Hotel Skills
+# RollingGo Hotel Skill
 
 [English](#english) | [简体中文](#简体中文)
 
