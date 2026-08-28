@@ -32,10 +32,6 @@ metadata:
 
 # RollingGo 酒店搜索与预订 Skill
 
-## 版本检查
-> - **每日检查**：若当前目录下的 `.version_check` 不存在或记录日期非今天，静默请求远端 `SKILL.md`（地址拼接规则：将元数据中的 `{repository}` 域名替换为 `raw.githubusercontent.com`，并在末尾追加 `/main/skills/{name}/SKILL.md`）对比 `version` 字段。若远端有更新，在回复开头提示用户更新。无论成败，均将今日日期 `YYYY-MM-DD` 写入 `.version_check`。
-> - **更新命令**：`请运行 npx skills update {name} 更新技能包`。
-
 ## 安装
 
 如果本地环境未安装 `rgh` 命令，可以通过以下三种方式之一进行安装：
@@ -121,7 +117,7 @@ CLI 工具内置了版本检测。当你在执行任何 `rgh` 命令时，如果
 ### 业务步骤指南
 
 #### Step 0：登录授权检查
-- 执行 `node scripts/rgh.js whoami` 检查登录状态。
+- 执行 `node scripts/rgh.js status`（也可使用 `whoami`）检查登录状态。
 - 若未登录，执行 `node scripts/rgh.js login`（⚠️ **必须以异步/后台模式运行**，如 `WaitMsBeforeAsync=2000`）。从输出提取授权链接（`https://rollinggo.store/s/xxx`），回复给用户完成授权。
 
 #### Step 1：信息收集

@@ -40,7 +40,6 @@
 | --origin-query | string | ✅ | 用户原始查询语句 |
 | --place | string | ✅ | 地点名称（城市、景点、酒店名等） |
 | --place-type | string | ✅ | 地点类型：城市/机场/景点/火车站/地铁站/酒店/区/县/详细地址 |
-| --country-code | string | ❌ | 国家代码（如 CN） |
 | --size | integer | ❌ | 返回数量，默认 5，最大 20 |
 | --check-in-date | string | ❌ | 入住日期 YYYY-MM-DD |
 | --stay-nights | integer | ❌ | 入住晚数，默认 1 |
@@ -95,8 +94,8 @@
 | --adult-count | integer | ❌ | 每间房成人数，默认 2 |
 | --child-count | integer | ❌ | 每间房儿童数，默认 0 |
 | --child-age | string | ❌ | 儿童年龄（逗号分隔） |
-| --country-code | string | ❌ | 国家代码，默认 CN |
-| --currency | string | ❌ | 币种，默认 CNY |
+| --cancel-policy | string | ❌ | 取消政策：`CANCELABLE`（免费取消） / `NON_CANCELABLE` |
+| --meal-type | string | ❌ | 餐食类型：`WITH_BREAKFAST` / `SINGLE_BREAKFAST` / `DOUBLE_BREAKFAST` / `NO_MEAL` |
 
 **输出**：
 
@@ -148,8 +147,6 @@
 | --adults | integer | ✅ | 每间房成人数 |
 | --children | integer | ❌ | 每间房儿童数 |
 | --child-age | string | ❌ | 儿童年龄（逗号分隔） |
-| --nationality | string | ❌ | 国籍代码，默认 CN |
-| --currency | string | ❌ | 币种，默认 CNY |
 
 **输出**：
 
@@ -183,8 +180,9 @@
 | --reference-no | string | ✅ | 预订参考号（从 price-confirm 获取） |
 | --first-name | string | ❌ | 联系人名（拼音或英文，默认取首个入住人） |
 | --last-name | string | ❌ | 联系人姓（拼音或英文，默认取首个入住人） |
-| --email | string | ✅ | 联系邮箱 |
+| --email | string | ✅ | 联系邮箱（国内版必填） |
 | --guest | string | ❌ | 客人信息：房间号,名字,姓氏,是否成人 (如: `1,San,Zhang,true`，可多次指定) |
+| --customer-request | string | ❌ | 客户特殊要求备注（如高楼层、无烟房等） |
 
 **输出**：
 
